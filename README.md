@@ -1,67 +1,63 @@
-🚜 Farmers Insurance Data Analysis (SQL)
+🚜 Farmers Insurance: Strategic Risk Analysis
 
-Authors: Chinmay H R, Vishnu Vardhan Chedella, Preetham S 
+    Authors: Chinmay H R, Vishnu Vardhan Chedella, Preetham S 
+    Domain: Insurance / Risk Analytics 
+    Focus: Business Intelligence & Data Modeling
 
-Topic: Insurance Claim & Policy Analysis Tech Stack: SQL (Structured Query Language)
+💼 Executive Summary
+In the insurance industry, data is the primary asset for managing risk. 
 
-📊 Database Architecture
-To understand the data flow, refer to the Entity Relationship Diagram (ERD) below. This illustrates how customers are linked to their policies, vehicles, and subsequent claims.
+This project performs a 360-degree analysis of a Farmers Insurance dataset to uncover critical insights into customer behavior, policy distribution, and financial exposure.
 
-(Note: See the full ER Diagram in the project PDF).
+By mapping the relationships between customers, their assets, and their claims, this project moves beyond simple data retrieval to provide actionable intelligence for risk assessment and customer segmentation.
 
-📌 Project Overview
-The goal of this project is to analyze a Farmers Insurance dataset to identify patterns in customer behavior, policy trends, and claim frequencies. By executing complex SQL queries, we extract actionable insights to assist in data-driven decision-making for insurance risk assessment and customer segmentation.
+🏗️ Data Ecosystem
+The analysis is built upon a relational model that simulates a real-world insurance database. It connects five critical dimensions of the business:
 
-🗄️ Database Schema
-The analysis is performed on a relational database consisting of five key tables:
+    👥 Customer Base: Demographic and geographic distribution of policyholders.
+    📜 Policy Architecture: Coverage details, premium structures, and deductibles.
+    💸 Financial Claims: Tracking the lifecycle of a claim from incident to payout.
+    🚗 Asset Portfolio: Analysis of insured vehicles (Make, Model, Year).
 
-Customers: Stores personal details (Name, Address, City, State, etc.).
+🛠️ SQL Arsenal project demonstrates advanced proficiency in SQL data manipulation:
+    
+    🔗 Complex Joins: Using INNER JOIN and LEFT JOIN to combine data across the Customer, Policy, and Claim tables.
+    📊 Aggregations: Using SUM(), AVG(), and COUNT() to summarize financial data.
+    🔍 Pattern Matching: Using LIKE operators to filter specific car models or regions
+    📉 Risk Segmentation: Implementing GROUP BY and ORDER BY to rank data
+        
 
-Policy: Contains policy specifications (Policy Date, Limits, Deductibles, Premiums).
+🚦 Driver Profiles: Risk assessment based on driver demographics (Age, Gender, Marital Status).
 
-Claim: Records claim events (Claim Date, Amount, Status).
+🔍 Strategic Analysis Modules
+This project addresses four key business pillars through data analysis:
 
-Drivers: Information on insured drivers (Age, Gender, Marital Status).
+    1. Market Penetration & Demographics
+    Goal: Understand where the customer base is concentrated.
+    Analysis: We mapped customer density across different states to identify core markets and potential growth regions.
 
+    2. Financial Risk & Exposure
+    Goal: Quantify the financial burden on the company.
+    Analysis: We aggregated total claim amounts by state and policy type. This highlights high-exposure regions where premium adjustments might be necessary.
+
+    3. Asset & Policy Trends
+    Goal: Analyze the portfolio of insured assets.
+    Analysis: We calculated metrics such as the "Average Vehicles per Customer" and identified which car models are most frequently associated with claims.
+
+    4. Risk Profiling
+    Goal: Identify high-risk segments.
+    Analysis: By correlating driver demographics (such as age and marital status) with claim frequency, we identified specific groups that drive higher loss ratios.
+
+🛠️ Skills Demonstrated
+
+    Relational Data Modeling: Understanding complex Many-to-One and One-to-Many relationships.
+    Business Intelligence: Translating raw data into questions about profitability and risk.
+    Data Aggregation: Summarizing granular transaction data into high-level executive insights.
+    Pattern Recognition: Identifying correlations between asset types and financial loss.
+
+🚀 Conclusion
+
+This project demonstrates how structured data analysis can be used to optimize insurance operations. 
+
+By identifying high-loss regions and high-risk driver profiles, the analysis provides the foundation for data-driven decisions in underwriting and premium pricing.
 Car: Details of insured vehicles (VIN, Make, Model, Year).
-
-💻 Sample Analysis: Top States by Claim Amount
-One of the key business questions addressed is identifying which regions have the highest financial exposure. Below is the SQL logic used to retrieve the Top 3 States by total claim amount.
-
-SQL
-
--- Query to find the top 3 states with the highest total claim amounts
-SELECT
-    C.State,
-    SUM(CL.claim_amount) AS Total_Claim_Amount
-FROM
-    Customers C
-JOIN
-    Policy P ON C.Cust_id = P.Cust_id
-JOIN
-    Claim CL ON P.Policy_id = CL.Policy_id
-GROUP BY
-    C.State
-ORDER BY
-    Total_Claim_Amount DESC
-LIMIT 3;
-📉 Visualizing the Results
-The query results can be visualized to quickly identify high-risk regions:
-
-🛠️ SQL Techniques Used
-This project demonstrates proficiency in the following SQL concepts:
-
-Shutterstock
-
-Joins: Using INNER JOIN and LEFT JOIN to combine data across the Customer, Policy, and Claim tables.
-
-Aggregation: Utilizing COUNT, SUM, and AVG to summarize financial data.
-
-Grouping & Sorting: Implementing GROUP BY and ORDER BY to rank data (as seen in the sample query above).
-
-🚀 How to Run
-Setup: Import the provided dataset script into your SQL environment (MySQL/PostgreSQL).
-
-Execution: Run the SQL_Assg_Farmers_Insurance_Questions_Starter.sql file to generate the views and tables.
-
-Analysis: Execute the individual queries to reproduce the insights found in the PDF report.
