@@ -1,5 +1,7 @@
 🚜 Farmers Insurance Data Analysis (SQL)
+
 Authors: Chinmay H R, Vishnu Vardhan Chedella, Preetham S 
+
 Topic: Insurance Claim & Policy Analysis Tech Stack: SQL (Structured Query Language)
 
 📊 Database Architecture
