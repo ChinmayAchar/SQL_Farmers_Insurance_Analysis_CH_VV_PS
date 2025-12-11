@@ -1,5 +1,6 @@
 🚜 Farmers Insurance Data Analysis (SQL)
-Authors: Chinmay H R, Vishnu Vardhan Chedella, Preetham S Topic: Insurance Claim & Policy Analysis Tech Stack: SQL (Structured Query Language)
+Authors: Chinmay H R, Vishnu Vardhan Chedella, Preetham S 
+Topic: Insurance Claim & Policy Analysis Tech Stack: SQL (Structured Query Language)
 
 📊 Database Architecture
 To understand the data flow, refer to the Entity Relationship Diagram (ERD) below. This illustrates how customers are linked to their policies, vehicles, and subsequent claims.
