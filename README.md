@@ -1,4 +1,6 @@
-🚜 Farmers Insurance: Strategic Risk Analysis
+#Strategic Risk Analysis
+
+🚜 Farmers Insurance 
 
     Authors: Chinmay H R, Vishnu Vardhan Chedella, Preetham S 
     Domain: Insurance / Risk Analytics 
