@@ -1,4 +1,4 @@
-#Strategic Risk Analysis
+**#Strategic Risk Analysis**
 
 🚜 Farmers Insurance 
 
