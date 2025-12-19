@@ -1,5 +1,4 @@
-# Meta-Ads-Performance-Dashboard_Chinmay_HR 
-**# Strategic Risk Analysis**
+# Strategic Risk Analysis
 
 🚜 Farmers Insurance 
 
