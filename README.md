@@ -1,7 +1,7 @@
 # Farmers Insurance analysis 
 Analysing Farmers Insurance claims to uncover Risk based on various factors
 
-🚜 Farmers Insurance: Strategy Risk Analysis
+# 🚜 Strategy Risk Analysis
 
     Authors: Chinmay H R, Vishnu Vardhan Chedella, Preetham S 
     Domain: Insurance / Risk Analytics 
