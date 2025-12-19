@@ -1,4 +1,5 @@
-# Strategic Risk Analysis
+# Farmers Insurance analysis
+Analysing Farmers Insurance claims to uncover Risk based on various factors
 
 🚜 Farmers Insurance 
 
